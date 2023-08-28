@@ -14,11 +14,12 @@ dotnet build
 ```
 
 Update the database with already generated migrations using the .NET CLI command:
-Note: By updating db some initial data will be seeded as well
 
 ```bash
 dotnet ef database update
 ```
+
+By updating db some initial data will be seeded as well
 
 To run the application using .NET CLI, run the command:
 ```bash
