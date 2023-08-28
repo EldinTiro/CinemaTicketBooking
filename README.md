@@ -2,24 +2,25 @@
 
 ## Start steps:
 
-Navigate to root directory and using docker-compose command, start the local db instance of the postgres
+Navigate to the root directory and using the docker-compose command, start the local db instance of the Postgres
 
 ```bash
 docker-compose up
 ```
 
-To build application using .NET cli, run command:
+To build the application using .NET CLI, run the command:
 ```bash
 dotnet build
 ```
 
-Update database with already generated migrations using .NET CLI command:
+Update the database with already generated migrations using the .NET CLI command:
+Note: By updating db some initial data will be seeded as well
 
 ```bash
 dotnet ef database update
 ```
 
-To run application using .NET cli, run command:
+To run the application using .NET CLI, run the command:
 ```bash
 dotnet run
 ```
@@ -67,12 +68,12 @@ dotnet run
 #Features and best practices that are implemented inside the project:
 1. Code-First approach
 2. Seeding initial data
-3. Scaffolding contollers from Entities
-4. AutoMapping DTO's to Entity models and reverse with Automapper
+3. Scaffolding controllers from Entities
+4. AutoMapping DTOs to Entity models and reverse with Automapper
 5. DataTransferObjects with DataAnotation validation
 6. Creating and building Postgress DB using docker (docker-compose)
 7. Global exception handlers
-8. Respository pattern as abstraction between the inteligence and controller layers
+8. Repository pattern as an abstraction between the intelligence and controller layers
 9. Unit test using xUnit library with InMemoryDb
 ...
 
